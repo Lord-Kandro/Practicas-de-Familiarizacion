@@ -26,5 +26,7 @@ namespace PracticasEspecializacion.Areas.Identity.Data
         [PersonalData]
         [Column(TypeName = "nvarchar(16)")]
         public string cedula { get; set; }
+
+        
     }
 }
