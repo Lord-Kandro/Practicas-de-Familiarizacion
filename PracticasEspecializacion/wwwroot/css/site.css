@@ -129,3 +129,41 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.container-rutinas{
+  width: 100%;
+  height: 100%;
+  background-color: #fde8ce;
+  border-radius: 20x;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container-rutinas .caja1{
+  margin: 8px;
+
+  width: 50%;
+  height: 50%;
+  background-color: #cee3fd;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 20px;
+  background-color: #cee3fd;
+}
+.Titulos{
+  text-align: center;
+}
+.hPrincipal{
+  text-align: center;
+}
+
+.caja2{
+  display: flex;
+  margin: 8px;
+  width: 50%;
+  height: 50%;
+  background-color: #cee3fd;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 20px;
+  background-color: #cee3fd;
+}
