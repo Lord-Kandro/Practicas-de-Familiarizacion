@@ -438,3 +438,8 @@ C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\ob
 C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Notas\Details.cshtml.g.cs
 C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Notas\Edit.cshtml.g.cs
 C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Notas\Index.cshtml.g.cs
+C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Agenda\Create.cshtml.g.cs
+C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Agenda\Delete.cshtml.g.cs
+C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Agenda\Details.cshtml.g.cs
+C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Agenda\Edit.cshtml.g.cs
+C:\Users\Jorge\source\repos\PracticasEspecializacion\PracticasEspecializacion\obj\Debug\netcoreapp3.1\Razor\Views\Agenda\Index.cshtml.g.cs

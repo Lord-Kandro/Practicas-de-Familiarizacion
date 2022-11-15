@@ -8,6 +8,7 @@ namespace PracticasEspecializacion.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Notas> notas { get; set; }
-    
+        public DbSet<Agenda> agendas { get; set; }
+
     }
 }
