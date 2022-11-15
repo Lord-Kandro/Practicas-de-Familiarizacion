@@ -47,6 +47,26 @@ namespace PracticasEspecializacion.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Nombre")]
+            public string Nombre { get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Apellido")]
+            public string Apellido { get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Teléfono")]
+            public string Telefono { get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Cédula")]
+            public string Cedula { get; set; }
+
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
@@ -75,7 +95,7 @@ namespace PracticasEspecializacion.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, nombre=Input.Nombre, apellido=Input.Apellido, celular=Input.Telefono, cedula=Input.Cedula };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

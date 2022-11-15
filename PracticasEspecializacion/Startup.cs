@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PracticasEspecializacion.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +28,21 @@ namespace PracticasEspecializacion
         {
             services.AddControllersWithViews();
             services.AddRazorPages(); //agregado para las vistas
+
+            services.Configure<IdentityOptions>(opciones =>
+            {
+                opciones.Password.RequiredLength = 8;
+                opciones.Password.RequiredUniqueChars = 0;
+                opciones.Password.RequireNonAlphanumeric = false;
+                opciones.Password.RequireUppercase = false;
+                opciones.Password.RequireLowercase = false;
+
+
+            });
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("AuthDbContextConnection"))
+            );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
